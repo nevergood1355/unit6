@@ -8,6 +8,7 @@ class ProductAdapter() : ListDelegationAdapter<List<Item>>() {
     init {
         delegatesManager.addDelegate(ProductDelegateAdapter())
         delegatesManager.addDelegate(AdDelegateAdapter())
+        delegatesManager.addDelegate(DownloadDelegateAdapter())
     }
 
     override fun setItems(items: List<Item>?) {
