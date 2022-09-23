@@ -14,8 +14,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
         val adapter = ProductAdapter()
+
         adapter.items = arrayListOf(
             Product(
                 0,
@@ -105,48 +107,6 @@ class MainActivity : AppCompatActivity() {
 
             )
         recyclerView.adapter = adapter
-        var savePositionFirst = 0
-        var savePositionLast = 0
 
-        //Метод который сохраняет текущую позицию скрола
-        fun savePosition() {
-            //your code here
-        }
-
-        //Метод который скролит список к началу
-        fun scrollToStart() {
-            //your code here
-        }
-
-        //Скролит к savePositionFirst
-        fun scrollToSaveStartPosition() {
-            //your code here
-        }
-
-        //Скролит к savePositionFirst
-        fun scrollToSaveLastPosition() {
-            //your code here
-        }
-
-        //Метод который скролит список в конец
-        fun scrollToEnd() {
-            //your code here
-        }
-
-        val up = findViewById<ImageView>(R.id.up)
-        val save = findViewById<ImageView>(R.id.save)
-        val down = findViewById<ImageView>(R.id.down)
-
-        up.setOnClickListener {
-            //your code here
-        }
-
-        save.setOnClickListener {
-            //your code here
-        }
-
-        down.setOnClickListener {
-            //your code here
-        }
     }
 }
